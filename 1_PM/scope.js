@@ -1,7 +1,9 @@
 /**
  * Part 1:
  *    What will print and why?
+ *    It will print 1, 2, and undefined
  *    What will change if we delete line 15? Why?
+ *    If we delete line 15, it will print 1, 2, 1 because the value of a is defined  globally in line 25
  * 
  * Part 2:
  *    Change to ES6 syntax (use arrow functions and change var to let).
@@ -12,7 +14,7 @@
  */
 
 function x() {
-  var a;
+  var a = 2;
   console.log(a);
 }
 
@@ -22,6 +24,6 @@ function y() {
   x();
 }
 
-var a = 1;
+let a = 1;
 console.log(a);
 y();

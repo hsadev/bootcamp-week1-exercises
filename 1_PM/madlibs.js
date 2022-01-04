@@ -10,9 +10,10 @@ const verb1 = ______
 
 Change thses values to generate a different story
 */
-
+const noun1 = 'David'
+const verb1 = 'sing'
 const story = `
-**replace this with your story using a template string**
+${noun1} went to school to ${verb1}.
 `
 
 console.log(story)
